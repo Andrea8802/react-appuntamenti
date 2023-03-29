@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillDelete } from 'react-icons/ai';
 
 const List = (props) => {
   return (
@@ -23,7 +24,7 @@ const Person = ({ id, nome, stato, img, removeItem }) => {
         <div className="person-action">
           <h4>{nome}</h4>
           <button className="btn" onClick={() => removeItem(id)}>
-            {" "} ✕ {" "}
+            {" "} <AiFillDelete className="icon" /> {" "}
           </button>
         </div>
         <p>{stato}</p>
